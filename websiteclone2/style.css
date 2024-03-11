@@ -1,0 +1,19 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* variable css */
+:root{
+    --hue-color: 242;
+    /* HSL COLOR MODE */
+    --skin-color: hsl(342,92%,46%);
+    --title-color:hsl(var(--hue-color), 8%, 95%);
+    --text-color:hsl(var(--hue-color),8%,85%);
+    --body-color:hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color),14%, 10%);
+    --scroll-bar-color:hsl(var(--hue-color),12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /* FONT AND TYPOGRAPHY  */
+    --body-font: 'Poppins', sans-serif;
+
+    
+}

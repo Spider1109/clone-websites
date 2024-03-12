@@ -15,5 +15,146 @@
     /* FONT AND TYPOGRAPHY  */
     --body-font: 'Poppins', sans-serif;
 
+    /* srem=8px, irem=16px,  */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* font weight */
+    --font-medius: 500;
+    --font-bold: 600;
+
+    /* Margenes Bottom */
+    --ab-0-25: .25rem;
+    --ab-0-5: .5rem;
+    --ab-0-75: .75rem;
+    --ab-1: 1rem;
+    --ab-1-5: 1.5rem;
+    --ab-2: 2rem;
+    --ab-2-5: 2.5rem;
+    --ab-3: 3rem;
     
+    /* Z Index */
+    --z-fixed: 10;
+    --z-modal: 100;
+}
+/* Responsive Typography */
+@media screen and (max-width: 1024px){
+    :root{
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .918rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+/* BASE */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body, button, input
+{
+    font-family: var(--body-font);
+    font-size: var(--text-color);
+}
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1, h2, h3
+{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+button
+{
+    cursor: pointer;
+}
+button, input
+{
+    border: none;
+    outline: none;
+}
+
+/* sidebar */
+.sidebar
+{
+    position: fixed;
+    width: 100px;
+    height:100vh;
+    background-color: var(--body-color);
+    border-right: 1px solid var(--box-color);
+}
+.nav_logo
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    text-align: center;
+    margin: auto;
+}
+.nav_logo-text
+{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+}
+.nav__menu
+{
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 100vh;
+}
+.menu
+{
+    display: flex;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto;
+
+}
+.nav__link
+{
+    height: 100%;
+    line-height: 100px;
+    padding: 0 1rem;
 }

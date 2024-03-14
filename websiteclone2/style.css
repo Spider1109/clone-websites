@@ -145,16 +145,56 @@ button, input
 {
     display: flex;
 }
-.nav__list
+.nav_list
 {
     display: flex;
     flex-direction: row-reverse;
     margin: -2px auto 0 auto;
 
 }
-.nav__link
+.nav_link
 {
+    float: right;
     height: 100%;
     line-height: 100px;
     padding: 0 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medius);
+    position: relative;
+    transition: .4s;
+}
+
+.btn_share
+{
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    margin: auto;
+    text-align: center;
+}
+.social_share
+{
+    font-size: 1.8rem;
+    color: white;
+
+}
+
+/* Activelink */
+.nav_link.active-link, .nav_link:hover{
+    color: var(--skin-color);
+}
+
+.nav_link.active-link::after, .nav_link:hover::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

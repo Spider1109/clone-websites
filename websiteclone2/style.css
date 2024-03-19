@@ -114,9 +114,27 @@ button, input
 .grid
 {
     display: grid;
-
 }
 
+/* Reusable Css Classes */
+.section
+{
+    padding: 6.5rem 0 2rem;
+}
+.section_title
+{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--ab-2-5)
+}
+.section_title::before
+{
+    content: attr(data-heading);
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color:var(--skin-color);
+}
 /* sidebar */
 .sidebar
 {
@@ -361,4 +379,45 @@ button, input
 .button_icon
 {
     font-size:1.25rem;
+}
+
+/* About Section */
+.about_container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
+.about_img{
+    width: 480px;
+    border-radius: 0.75rem;
+    justify-self: center;
+}
+.about_heading{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--ab-0-75)
+}
+.about_description
+{
+    text-align: justify;
+    padding-right: 6rem;
+    margin-bottom: var(--ab-2);
+}
+.about_info
+{
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color)
+}
+.about_icon{
+    font-size: 1.5rem;
+    color:var(--skin-color);
+    margin-bottom: var(--ab-0-75);
+}
+.about_title{
+    font-size: var(--small-font-size);
+}
+.about_subtitle
+{
+    font-size: var(--smaller-font-size);
 }

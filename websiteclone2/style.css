@@ -498,3 +498,47 @@ button, input
     font-size: var(--small-font-size);
     color: var(--skin-color);
 }
+
+/* SKILLS SECTION */
+.skills_container
+{
+    grid-template-columns: 360px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills_header
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills_header:not(:last-child)
+{
+    margin-bottom: var(--ab-2-5);
+}
+
+.skills_icon,
+.skills_arrow
+{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+.skills_icon
+{
+    margin-right: var(--ab-0-75);
+}
+.skills_title
+{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_subtitle
+{
+    font-size: var(--small-font-size);
+}
+.skills_arrow
+{
+    margin-left: auto;
+}

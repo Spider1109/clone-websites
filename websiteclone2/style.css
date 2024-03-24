@@ -502,7 +502,7 @@ button, input
 /* SKILLS SECTION */
 .skills_container
 {
-    grid-template-columns: 360px;
+    grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
 }
@@ -541,4 +541,50 @@ button, input
 .skills_arrow
 {
     margin-left: auto;
+}
+
+.skills_active, .skills_arrow
+{
+    transform: rotate(-90deg);
+    transform: .3s;
+}
+.skills [data-content]{
+    display: none;
+}
+.skills_active[data-content]{
+    display: block;
+}
+.skills_list
+{
+    row-gap: 1.8rem;
+}
+.skills_title
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--ab-0-5);
+}
+
+.skills_name
+{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage
+{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar
+{
+    background-color: var(--box-color);
+}
+
+.skills_percentage
+{
+    display: block;
+    background-color: var(--skin-color);
 }

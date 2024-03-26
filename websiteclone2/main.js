@@ -7,14 +7,14 @@ tabs.forEach(tab =>
         tab.addEventListener("click",()=>{
             const target= document.querySelector(tab.dataset.target)
             tabContent.forEach(tableContents =>{
-                tableContents.classList.remove("skills_active")
+                tableContents.classList.remove('skills_active')
             })
-            target.classList.add("skills_active")
+            target.classList.add('skills_active')
 
 
             tabs.forEach(tableContents =>{
-                tabs.classList.remove("skills_active")
+                tabs.classList.remove('skills_active')
             })
-            target.classList.add("skills_active")
+            target.classList.add('skills_active')
         })
     })

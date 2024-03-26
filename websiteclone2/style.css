@@ -664,3 +664,73 @@ button, input
     background-color: var(--skin-color);
     color: var(--title-color);
 }
+
+/* portfolio_popup */
+.portfolio_popup
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index:var(--z-modal);
+    transition: .3s;
+}
+
+.portfolio_popup-inner
+{
+    background-color: var(--box-color);
+    width:900px;
+    border-radius:.5rem;
+    padding: 2.5rem;
+}
+
+.portfolio_popup-contest
+{
+    grid-template-columns: repeat(2, lfr);
+    align-items: center;
+    column-gap: 3rem;
+
+}
+
+.portfolio_popup-class{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    cursor: pointer;
+}
+
+.portfolio_popup-img{
+    border-radius: .5rem;
+}
+
+.portfolio_popup-subtitle{
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--ab-0-25);
+}
+
+.details_title
+{
+    font-size:var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--ab-1);
+}
+
+.details_description
+{
+    font-size: var(--small-font-size);
+    margin-bottom: var(--ab-2);
+}
+
+.details_info li{
+    margin-bottom: var(--ab-0-75);
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+}

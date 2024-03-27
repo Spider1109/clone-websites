@@ -679,7 +679,14 @@ button, input
     align-items: center;
     padding: 0 1rem;
     z-index:var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
     transition: .3s;
+}
+
+.portfolio_popup.open{
+    opacity:1;
+    visibility:visible;
 }
 
 .portfolio_popup-inner
@@ -733,4 +740,21 @@ button, input
     margin-bottom: var(--ab-0-75);
     text-transform: capitalize;
     font-size: var(--small-font-size);
+}
+
+.details_info li{
+    margin-bottom: var(--ab-0-75);
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+}
+.details_info li:last-child
+{
+    margin-bottom: 0;
+}
+.details_info li span{
+    font-weight: normal;
+}
+.details_info li a{
+    text-transform: lowercase;
+    color: var(--skin-color);
 }

@@ -758,3 +758,49 @@ button, input
     text-transform: lowercase;
     color: var(--skin-color);
 }
+
+/* Services Section */
+.services_container{
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+}
+.services_content
+{
+    position: relative;
+    background-color: var(--box-color);
+    padding: 6rem 0 2rem 2.5rem;
+    border-radius: .25rem;
+}
+.service_icon
+{
+    display: block;
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-bottom: var(--ab-1);
+}
+
+.service_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--ab-1);
+    font-weight: var(--font-medium);
+}
+.service_button
+{
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items:center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.service_button-icon
+{
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.service_button:hover .service_button-icon
+{
+    transform: translateX(.25rem);
+}
